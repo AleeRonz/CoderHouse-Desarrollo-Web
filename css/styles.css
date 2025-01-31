@@ -1,0 +1,450 @@
+/* Importamos la tipografía */
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+/* reseteamos CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Afacad Flux", serif;
+}
+
+/* Definimos Variables */
+:root {
+    --rosaFuerte: #FF2A68;
+    --rosaClaro: #FFB6C1;
+}
+
+/* Estilos del header y dentro del header */
+header {
+    background: var(--rosaClaro);
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    grid-column: 1/-1;
+}
+
+.logo a img {
+    width: 20%;
+}
+
+/* Estilos del nav Bootstrap*/
+.navbar {
+    grid-column: 1/2;
+}
+
+.navbar-collapse {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--rosaClaro);
+    border: 1px solid black;
+    z-index: 10;
+}
+
+.navbar .nav-link {
+    color: white;
+    font-family: "Afacad Flux", serif;
+    font-weight: bold;
+}
+
+.navbar .nav-link:hover {
+    color: var(--rosaFuerte);
+}
+
+.background-nav {
+    background: var(--rosaClaro);
+}
+
+/* Estilo Carrito Bootstrap */
+.carrito {
+    grid-column: 3/3;
+}
+
+.carrito svg {
+    width: 60%;
+    color: white;
+}
+
+/* Estilos H1 */
+.h1PB {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.h1PB h1 a {
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+}
+
+/* Estilos HTML Index */
+/* Estilos del main y dentro del main */
+
+.subtitulo {
+    color: white;
+    background: var(--rosaFuerte);
+    font-size: 20px;
+}
+
+/* Sección Carousel Bootstrap */
+.carousel-item img {
+    width: 200px;
+    height: 200px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--rosaFuerte);
+}
+
+/* Sección Compra Bootstrap */
+.seccion-compra {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Ajustando las Card */
+.card-img-top {
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Estilos del boton de las Card y botón en general*/
+.btn-primary {
+    background: var(--rosaFuerte);
+    border: var(--rosaFuerte);
+    padding: 5px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background: var(--rosaClaro);
+    color: var(--rosaFuerte);
+}
+
+/* Sección Footer */
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    background: var(--rosaClaro);
+    text-align: center;
+    color: white;
+}
+
+.suscribirse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contactos h4 {
+    font-size: 15px;
+}
+
+.btnFooter {
+    background: var(--rosaFuerte);
+    border: white;
+    padding: 5px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    margin-top: 3px;
+    width: 50%;
+    text-align: center;
+}
+
+.btnFooter:hover {
+    background: white;
+    color: var(--rosaFuerte);
+}
+
+/* Estilos HTML Mochilas */
+h2 {
+    text-align: center;
+}
+
+.h2MochilaTotebag {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: var(--rosaFuerte);
+    color: white;
+    font-size: 20px;
+}
+
+/* Alineamos y editamos los Div de las compras exclusivas */
+
+.compraExclusivah2 {
+    color: var(--rosaFuerte);
+    font-size: 40px;
+    text-decoration: underline;
+    margin: 4px;
+}
+
+.compraExclusiva {
+    display: flex;
+    flex-direction: column;
+}
+
+.compraExclusiva div {
+    text-align: center;
+    color: var(--rosaFuerte);
+    border: 2px solid var(--rosaFuerte);
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.compraExclusiva div h3 {
+    background-color: var(--rosaFuerte);
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.compraExclusiva div img {
+    width: 50%;
+}
+
+.carousel-item .compra {
+    justify-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Estilos HTML Servicios */
+
+/* Estilo de Servicios */
+.serviciosP {
+    text-align: center;
+    color: var(--rosaFuerte);
+    font-weight: bold;
+}
+
+.servicios {
+    margin: 5%;
+    font-weight: bold;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.servicios div p span {
+    color: var(--rosaFuerte);
+}
+
+.personalizacion {
+    border: 5px solid var(--rosaFuerte);
+    justify-items: center;
+    text-align: center;
+    align-content: center;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+.personalizacion img {
+    width: 100%;
+}
+
+.mantenimiento {
+    border: 5px solid var(--rosaFuerte);
+    margin-top: 5%;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+.mantenimiento img {
+    width: 100%;
+}
+
+.estilo {
+    border: 5px solid var(--rosaFuerte);
+    margin-top: 5%;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+.estilo img {
+    width: 100%;
+}
+
+/* Estilo Certificado */
+.certificado {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos HTML Contacto */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+.form div {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    font-size: 30px;
+    color: var(--rosaFuerte);
+    font-weight: bold;
+}
+
+#btnForm {
+    margin-top: 10px;
+}
+
+/* Media Query */
+/* Desktop */
+@media (min-width: 1024px) {
+
+    /* Estilos Por defectos de todas las paginas */
+    header {
+        grid-template-columns: 20% 1fr 20%;
+        grid-template-rows: auto 1fr auto;
+        align-items: center;
+    }
+
+    .logo a img {
+        width: 10%;
+    }
+
+    .navbar {
+        grid-column: 2/3;
+        grid-row: 2/2;
+        margin-top: -60px;
+        background-color: transparent;
+    }
+
+    .navbar-collapse {
+        background-color: transparent;
+        border: none;
+        place-self: start center;
+    }
+
+    .carrito {
+        grid-column: 3/3;
+        grid-row: 2/3;
+        display: flex;
+        justify-self: start;
+    }
+
+    .carrito svg {
+        width: 10%;
+        color: white;
+    }
+
+    .h1PB {
+        grid-column: 1/-1;
+        grid-row: 3;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .btnFooter {
+        width: 10%;
+    }
+
+    /* Estilos Index */
+    .carousel-item img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .seccion-compra {
+        flex-direction: row;
+        gap: 200px;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .card-img-top {
+        height: 400px;
+    }
+
+    /* Estilos Página Mochila */
+    .compraExclusivah2 {
+        font-size: 100px;
+    }
+
+    .compraExclusiva {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .compraExclusiva div img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .h2MochilaTotebag {
+        font-size: 40px;
+    }
+
+    /* Estilos Página Servicios */
+    .serviciosP {
+        font-size: 40px;
+    }
+
+    .servicios {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-self: center;
+    }
+
+    .servicios div {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .servicios div {
+        max-width: 500px;
+    }
+
+    .servicios div.invertido {
+        grid-template-columns: 1fr auto;
+    }
+
+    .servicios div.invertido img {
+        order: 2;
+    }
+}
