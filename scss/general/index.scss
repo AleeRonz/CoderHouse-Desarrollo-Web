@@ -1,0 +1,153 @@
+// Import Variables
+@import "../utilidades/variables";
+// Import Mixin
+@import "../utilidades/mixin";
+
+/*Estilos Mobile*/
+/*Estilos Header*/
+header {
+    background: $color-rosaClaro;
+    // @include grid(grid, 1fr, auto, 1fr, auto, auto);
+    @include grid(grid, 1fr auto 1fr, repeat(2, auto));
+    align-items: center;
+    text-align: center;
+
+    /*Estilos Logo - Navbar - Carrito - H1*/
+    .logo {
+        @include grid-column(1, -1);
+
+        a {
+            img {
+                @include width(20%);
+            }
+        }
+    }
+
+    .navbar {
+        @include grid-column(1, 2);
+    }
+
+    .navbar-collapse {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: $color-rosaClaro;
+        @include border(1px, solid, $color-negro);
+        z-index: 10;
+    }
+
+    .nav-link {
+        color: $color-blanco;
+        font-family: "Afacad Flux", serif;
+        font-weight: bold;
+    }
+
+    .nav-link:hover {
+        color: $color-rosaFuerte;
+    }
+
+    .background-nav {
+        background: $color-rosaClaro;
+    }
+
+    .carrito {
+        @include grid-column(3, 3);
+
+        svg {
+            @include width(60%);
+            color: $color-blanco;
+        }
+    }
+
+    .h1PB {
+        @include grid-column(2, 3);
+        @include grid-row(2, 3);
+
+        h1 {
+            a {
+                text-decoration: none;
+                color: $color-blanco;
+                @include font-size(50px);
+            }
+        }
+    }
+}
+
+/* Estilos HTML Index */
+/* Estilos del Main - H2 - Carousel - Seccion Compra - Card - Botones - Footer*/
+main {
+    .subtitulo {
+        color: $color-blanco;
+        background: $color-rosaFuerte;
+        @include font-size(20px);
+        text-align: center;
+    }
+
+    .carousel-item {
+        img {
+            @include width(200px);
+            @include height(200px);
+        }
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: $color-rosaFuerte;
+    }
+
+    .seccion-compra {
+        @include flex;
+        gap: 20px;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .card-img-top {
+        @include height(100%);
+        object-fit: cover;
+    }
+
+    .card-body {
+        @include flex;
+        text-align: center;
+    }
+
+    .btn-primary {
+        @include general-BTN;
+    }
+
+    .btn-primary:hover {
+        @include btn-hover($color-rosaClaro, $color-rosaFuerte);
+    }
+}
+
+/* Sección Footer */
+footer {
+    @include grid(grid,1fr 1fr,1fr);
+    background: $color-rosaClaro;
+    text-align: center;
+    color: $color-blanco;
+
+    .suscribirse {
+        @extend .card-body;
+        align-items: center;
+    }
+
+    .contactos {
+        h4 {
+            @include font-size(15px);
+        }
+    }
+
+    .btnFooter {
+        @include general-BTN;
+    }
+
+    .btnFooter:hover {
+        @include btn-hover($color-blanco, $color-rosaFuerte);
+    }
+}
+/*Estilos HTML Mochilas*/
+

@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/* Importamos la tipografía */
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap");
+/* reseteamos CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos Generales */
+body {
+  font-family: "Afacad Flux", serif;
+}
+
+/*Estilos Mobile*/
+/*Estilos Header*/
+header {
+  background: #FFB6C1;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: repeat(2, auto);
+  align-items: center;
+  text-align: center;
+  /*Estilos Logo - Navbar - Carrito - H1*/
+}
+header .logo {
+  grid-column: 1/-1;
+}
+header .logo a img {
+  width: 20%;
+}
+header .navbar {
+  grid-column: 1/2;
+}
+header .navbar-collapse {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #FFB6C1;
+  border: 1px, solid, black;
+  z-index: 10;
+}
+header .nav-link {
+  color: white;
+  font-family: "Afacad Flux", serif;
+  font-weight: bold;
+}
+header .nav-link:hover {
+  color: #FF2A68;
+}
+header .background-nav {
+  background: #FFB6C1;
+}
+header .carrito {
+  grid-column: 3/3;
+}
+header .carrito svg {
+  width: 60%;
+  color: white;
+}
+header .h1PB {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+header .h1PB h1 a {
+  text-decoration: none;
+  color: white;
+  font-size: 50px;
+}
+
+/* Estilos HTML Index */
+/* Estilos del Main - H2 - Carousel - Seccion Compra - Card - Botones - Footer*/
+main .subtitulo {
+  color: white;
+  background: #FF2A68;
+  font-size: 20px;
+  text-align: center;
+}
+main .carousel-item img {
+  width: 200px;
+  height: 200px;
+}
+main .carousel-control-prev-icon,
+main .carousel-control-next-icon {
+  background-color: #FF2A68;
+}
+main .seccion-compra {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+main .card-img-top {
+  height: 100%;
+  object-fit: cover;
+}
+main .card-body, main footer .suscribirse, footer main .suscribirse {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+main .btn-primary {
+  background: #FF2A68;
+  padding: 5px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+}
+main .btn-primary:hover {
+  background: #FFB6C1;
+  color: #FF2A68;
+}
+
+/* Sección Footer */
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  background: #FFB6C1;
+  text-align: center;
+  color: white;
+}
+footer .suscribirse {
+  align-items: center;
+}
+footer .contactos h4 {
+  font-size: 15px;
+}
+footer .btnFooter {
+  background: #FF2A68;
+  padding: 5px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+}
+footer .btnFooter:hover {
+  background: white;
+  color: #FF2A68;
+}
+
+/*Estilos HTML Mochilas*/
+
+/*# sourceMappingURL=main.css.map */
