@@ -192,6 +192,7 @@ main {
                     color: $color-rosaFuerte;
                 }
             }
+
             @include border(5px, solid, $color-rosaFuerte);
             margin-top: 5%;
             justify-items: center;
@@ -199,16 +200,19 @@ main {
             text-align: center;
             padding: 10px;
             border-radius: 10%;
-            img{
-                width: 100%;
+
+            img {
+                width: 150%;
             }
         }
     }
-    .certificado{
+
+    .certificado {
         @include flex;
         text-align: center;
     }
 }
+
 // Estilo HTML Contacto
 .form {
     @include flex;
@@ -216,6 +220,7 @@ main {
     text-align: center;
     margin-top: 100px;
     margin-bottom: 150px;
+
     div {
         @include flex;
         width: 300px;
@@ -223,10 +228,12 @@ main {
         color: $color-rosaFuerte;
         font-weight: bold;
     }
+
     #btnForm {
         margin-top: 10px;
     }
 }
+
 /* Sección Footer */
 footer {
     @include grid(grid, 1fr 1fr, 1fr);

@@ -1,0 +1,124 @@
+// Import Variables
+@import "../utilidades/variables";
+// Import Mixin
+@import "../utilidades/mixin";
+/* Media Query */
+/* Tablet */
+@media (min-width: 768px) {
+    header {
+        .carrito {
+            svg {
+                width: 20%;
+            }
+        }
+
+        .navbar {
+            font-size: 20px;
+        }
+    }
+
+    main {
+        .subtitulo {
+            font-size: 30px;
+        }
+
+        .carousel-item img {
+            width: 400px;
+            height: 400px;
+        }
+
+        .seccion-compra {
+            h5 {
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 25px;
+            }
+        }
+
+        .btn-primary {
+            font-size: 25px;
+        }
+
+        .h2MochilaTotebag {
+            font-size: 30px;
+        }
+
+        .compraExclusivah2 {
+            font-size: 60px;
+        }
+
+        .compraExclusiva {
+            div {
+                h3 {
+                    font-size: 30px;
+                }
+
+                p {
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .carousel-item {
+            div {
+                h3 {
+                    font-size: 40px;
+                }
+            }
+        }
+
+        .serviciosP {
+            font-size: 25px;
+        }
+
+        .servicios {
+            div {
+                img{
+                    width: 200%;
+                }
+                p {
+                    font-size: 25px;
+                }
+            }
+        }
+        .certificado{
+            div{
+                p{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
+    footer {
+        margin-top: 250px;
+        div {
+            h3 {
+                font-size: 40px;
+            }
+
+            input {
+                font-size: 20px;
+            }
+        }
+
+        .btnFooter {
+            font-size: 20px;
+        }
+
+        .iconos-sociales {
+            svg {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        .contactos {
+            h4 {
+                font-size: 20px;
+            }
+        }
+    }
+}

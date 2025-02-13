@@ -39,6 +39,7 @@
 @mixin general-BTN {
     background: $color-rosaFuerte;
     padding: 5px;
+    border: $color-rosaFuerte;
     border-radius: 20px;
     color: $color-blanco;
     font-weight: bold;

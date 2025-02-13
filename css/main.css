@@ -114,6 +114,7 @@ main .card-body, main footer .suscribirse, footer main .suscribirse {
 main .btn-primary {
   background: #FF2A68;
   padding: 5px;
+  border: #FF2A68;
   border-radius: 20px;
   color: white;
   font-weight: bold;
@@ -182,7 +183,7 @@ main .servicios div p span {
   color: #FF2A68;
 }
 main .servicios div img {
-  width: 100%;
+  width: 150%;
 }
 main .certificado {
   display: flex;
@@ -228,6 +229,7 @@ footer .contactos h4 {
 footer .btnFooter {
   background: #FF2A68;
   padding: 5px;
+  border: #FF2A68;
   border-radius: 20px;
   color: white;
   font-weight: bold;
@@ -237,6 +239,78 @@ footer .btnFooter:hover {
   color: #FF2A68;
 }
 
+/* Media Query */
+/* Tablet */
+@media (min-width: 768px) {
+  header .carrito svg {
+    width: 20%;
+  }
+  header .navbar {
+    font-size: 20px;
+  }
+  main .subtitulo {
+    font-size: 30px;
+  }
+  main .carousel-item img {
+    width: 400px;
+    height: 400px;
+  }
+  main .seccion-compra h5 {
+    font-size: 40px;
+  }
+  main .seccion-compra p {
+    font-size: 25px;
+  }
+  main .btn-primary {
+    font-size: 25px;
+  }
+  main .h2MochilaTotebag {
+    font-size: 30px;
+  }
+  main .compraExclusivah2 {
+    font-size: 60px;
+  }
+  main .compraExclusiva div h3 {
+    font-size: 30px;
+  }
+  main .compraExclusiva div p {
+    font-size: 25px;
+  }
+  main .carousel-item div h3 {
+    font-size: 40px;
+  }
+  main .serviciosP {
+    font-size: 25px;
+  }
+  main .servicios div img {
+    width: 200%;
+  }
+  main .servicios div p {
+    font-size: 25px;
+  }
+  main .certificado div p {
+    font-size: 25px;
+  }
+  footer {
+    margin-top: 250px;
+  }
+  footer div h3 {
+    font-size: 40px;
+  }
+  footer div input {
+    font-size: 20px;
+  }
+  footer .btnFooter {
+    font-size: 20px;
+  }
+  footer .iconos-sociales svg {
+    width: 30px;
+    height: 30px;
+  }
+  footer .contactos h4 {
+    font-size: 20px;
+  }
+}
 /* Media Query */
 /* Desktop */
 @media (min-width: 1024px) {
