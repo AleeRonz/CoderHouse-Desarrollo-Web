@@ -14,7 +14,7 @@ body {
 }
 
 /*Estilos Mobile*/
-/*Estilos Header*/
+/*Estilos Header -  Logo - Navbar - Carrito - H1*/
 header {
   background: #FFB6C1;
   display: grid;
@@ -22,7 +22,6 @@ header {
   grid-template-rows: repeat(2, auto);
   align-items: center;
   text-align: center;
-  /*Estilos Logo - Navbar - Carrito - H1*/
 }
 header .logo {
   grid-column: 1/-1;
@@ -183,7 +182,7 @@ main .servicios div p span {
   color: #FF2A68;
 }
 main .servicios div img {
-  width: 150%;
+  width: 80px;
 }
 main .certificado {
   display: flex;
@@ -242,18 +241,25 @@ footer .btnFooter:hover {
 /* Media Query */
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
+  /*Estilo Header - Main - Footer*/
   header .carrito svg {
     width: 20%;
   }
   header .navbar {
-    font-size: 20px;
+    font-size: 25px;
   }
   main .subtitulo {
     font-size: 30px;
   }
+  main .carousel {
+    margin-top: 100px;
+  }
   main .carousel-item img {
     width: 400px;
     height: 400px;
+  }
+  main .seccion-compra {
+    margin-top: 170px;
   }
   main .seccion-compra h5 {
     font-size: 40px;
@@ -314,6 +320,7 @@ footer .btnFooter:hover {
 /* Media Query */
 /* Desktop */
 @media (min-width: 1024px) {
+  /*Estilo Header - Main - Footer*/
   header {
     grid-template-columns: 20% 1fr 20%;
     grid-template-rows: auto 1fr auto;

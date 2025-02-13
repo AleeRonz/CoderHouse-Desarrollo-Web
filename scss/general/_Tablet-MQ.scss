@@ -5,6 +5,7 @@
 /* Media Query */
 /* Tablet */
 @media (min-width: 768px) and (max-width:1023px) {
+    /*Estilo Header - Main - Footer*/
     header {
         .carrito {
             svg {
@@ -13,7 +14,7 @@
         }
 
         .navbar {
-            font-size: 20px;
+            font-size: 25px;
         }
     }
 
@@ -21,7 +22,9 @@
         .subtitulo {
             font-size: 30px;
         }
-
+        .carousel{
+            margin-top: 100px;
+        }
         .carousel-item img {
             width: 400px;
             height: 400px;
@@ -35,6 +38,7 @@
             p {
                 font-size: 25px;
             }
+            margin-top: 170px;
         }
 
         .btn-primary {

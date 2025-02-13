@@ -5,6 +5,7 @@
 /* Media Query */
 /* Desktop */
 @media (min-width: 1024px) {
+    /*Estilo Header - Main - Footer*/
     header {
         grid-template-columns: 20% 1fr 20%;
         grid-template-rows: auto 1fr auto;
