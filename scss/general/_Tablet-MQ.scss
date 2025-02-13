@@ -4,7 +4,7 @@
 @import "../utilidades/mixin";
 /* Media Query */
 /* Tablet */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width:1023px) {
     header {
         .carrito {
             svg {
