@@ -75,7 +75,7 @@ header {
     }
 }
 
-/* Estilos HTML Index */
+/* Estilos HTML Index - Mochilas - ToteBag - Servicios - Contacto*/
 /* Estilos del Main - H2 - Carousel - Seccion Compra - Card - Botones - Footer*/
 main {
     .subtitulo {
@@ -85,10 +85,21 @@ main {
         text-align: center;
     }
 
+    h2 {
+        text-align: center;
+    }
+
     .carousel-item {
         img {
             @include width(200px);
             @include height(200px);
+        }
+
+        // HTML Mochila
+        .compra {
+            justify-items: center;
+            text-align: center;
+            margin-bottom: 10px;
         }
     }
 
@@ -121,11 +132,104 @@ main {
     .btn-primary:hover {
         @include btn-hover($color-rosaClaro, $color-rosaFuerte);
     }
-}
 
+    // Estilo HTML Mochilas - ToteBag
+    .h2MochilaTotebag {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background-color: $color-rosaFuerte;
+        color: $color-blanco;
+        font-size: 20px;
+    }
+
+    .compraExclusivah2 {
+        color: $color-rosaFuerte;
+        font-size: 40px;
+        text-decoration: underline;
+        margin: 4px;
+    }
+
+    .compraExclusiva {
+        @include flex;
+
+        div {
+            text-align: center;
+            color: $color-rosaFuerte;
+            @include border(2px, solid, $color-rosaFuerte);
+            margin: 5px;
+            padding: 5px;
+            font-size: 20px;
+
+            h3 {
+                background-color: $color-rosaFuerte;
+                color: $color-blanco;
+                padding: 10px;
+                font-weight: bold;
+            }
+
+            img {
+                width: 50%;
+            }
+        }
+    }
+
+    // Estilo HTML Servicios
+    .serviciosP {
+        text-align: center;
+        color: var(--rosaFuerte);
+        font-weight: bold;
+    }
+
+    .servicios {
+        margin: 5%;
+        font-weight: bold;
+        font-size: 20px;
+        @include grid(grid, 1fr, 1fr 1fr 1fr);
+
+        div {
+            p {
+                span {
+                    color: $color-rosaFuerte;
+                }
+            }
+            @include border(5px, solid, $color-rosaFuerte);
+            margin-top: 5%;
+            justify-items: center;
+            align-content: center;
+            text-align: center;
+            padding: 10px;
+            border-radius: 10%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .certificado{
+        @include flex;
+        text-align: center;
+    }
+}
+// Estilo HTML Contacto
+.form {
+    @include flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    div {
+        @include flex;
+        width: 300px;
+        font-size: 30px;
+        color: $color-rosaFuerte;
+        font-weight: bold;
+    }
+    #btnForm {
+        margin-top: 10px;
+    }
+}
 /* Sección Footer */
 footer {
-    @include grid(grid,1fr 1fr,1fr);
+    @include grid(grid, 1fr 1fr, 1fr);
     background: $color-rosaClaro;
     text-align: center;
     color: $color-blanco;
@@ -149,5 +253,3 @@ footer {
         @include btn-hover($color-blanco, $color-rosaFuerte);
     }
 }
-/*Estilos HTML Mochilas*/
-

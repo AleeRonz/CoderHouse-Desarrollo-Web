@@ -71,7 +71,7 @@ header .h1PB h1 a {
   font-size: 50px;
 }
 
-/* Estilos HTML Index */
+/* Estilos HTML Index - Mochilas - ToteBag - Servicios - Contacto*/
 /* Estilos del Main - H2 - Carousel - Seccion Compra - Card - Botones - Footer*/
 main .subtitulo {
   color: white;
@@ -79,9 +79,17 @@ main .subtitulo {
   font-size: 20px;
   text-align: center;
 }
+main h2 {
+  text-align: center;
+}
 main .carousel-item img {
   width: 200px;
   height: 200px;
+}
+main .carousel-item .compra {
+  justify-items: center;
+  text-align: center;
+  margin-bottom: 10px;
 }
 main .carousel-control-prev-icon,
 main .carousel-control-next-icon {
@@ -114,6 +122,93 @@ main .btn-primary:hover {
   background: #FFB6C1;
   color: #FF2A68;
 }
+main .h2MochilaTotebag {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #FF2A68;
+  color: white;
+  font-size: 20px;
+}
+main .compraExclusivah2 {
+  color: #FF2A68;
+  font-size: 40px;
+  text-decoration: underline;
+  margin: 4px;
+}
+main .compraExclusiva {
+  display: flex;
+  flex-direction: column;
+}
+main .compraExclusiva div {
+  text-align: center;
+  color: #FF2A68;
+  border: 2px, solid, #FF2A68;
+  margin: 5px;
+  padding: 5px;
+  font-size: 20px;
+}
+main .compraExclusiva div h3 {
+  background-color: #FF2A68;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+}
+main .compraExclusiva div img {
+  width: 50%;
+}
+main .serviciosP {
+  text-align: center;
+  color: var(--rosaFuerte);
+  font-weight: bold;
+}
+main .servicios {
+  margin: 5%;
+  font-weight: bold;
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+main .servicios div {
+  border: 5px, solid, #FF2A68;
+  margin-top: 5%;
+  justify-items: center;
+  align-content: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10%;
+}
+main .servicios div p span {
+  color: #FF2A68;
+}
+main .servicios div img {
+  width: 100%;
+}
+main .certificado {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+.form div {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  font-size: 30px;
+  color: #FF2A68;
+  font-weight: bold;
+}
+.form #btnForm {
+  margin-top: 10px;
+}
 
 /* Sección Footer */
 footer {
@@ -142,6 +237,97 @@ footer .btnFooter:hover {
   color: #FF2A68;
 }
 
-/*Estilos HTML Mochilas*/
+/* Media Query */
+/* Desktop */
+@media (min-width: 1024px) {
+  header {
+    grid-template-columns: 20% 1fr 20%;
+    grid-template-rows: auto 1fr auto;
+    align-items: center;
+  }
+  header .logo a img {
+    width: 10%;
+  }
+  header .navbar {
+    grid-column: 2/3;
+    grid-row: 2/2;
+    margin-top: -60px;
+    background-color: transparent;
+  }
+  header .navbar-collapse {
+    background-color: transparent;
+    border: none;
+    place-self: start center;
+  }
+  header .carrito {
+    grid-column: 3/3;
+    grid-row: 2/3;
+    display: flex;
+    justify-self: start;
+  }
+  header .carrito svg {
+    width: 10%;
+    color: white;
+  }
+  header .h1PB {
+    grid-column: 1/-1;
+    grid-row: 3/3;
+  }
+  main .carousel-item img {
+    width: 400px;
+    height: 400px;
+  }
+  main .seccion-compra {
+    flex-direction: row;
+    gap: 200px;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  main .card-img-top {
+    height: 400px;
+  }
+  main .compraExclusivah2 {
+    font-size: 100px;
+  }
+  main .compraExclusiva {
+    flex-direction: row;
+    justify-content: center;
+  }
+  main .compraExclusiva div img {
+    width: 400px;
+    height: 400px;
+  }
+  main .h2MochilaTotebag {
+    font-size: 40px;
+  }
+  main .serviciosP {
+    font-size: 40px;
+  }
+  main .servicios {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-self: center;
+  }
+  main .servicios div {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+  }
+  main .servicios div.invertido {
+    grid-template-columns: 1fr auto;
+  }
+  main .servicios div.invertido img {
+    order: 2;
+  }
+  footer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  footer .btnFooter {
+    width: 10%;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

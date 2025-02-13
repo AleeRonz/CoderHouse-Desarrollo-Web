@@ -1,0 +1,111 @@
+// Import Variables
+@import "../utilidades/variables";
+// Import Mixin
+@import "../utilidades/mixin";
+/* Media Query */
+/* Desktop */
+@media (min-width: 1024px) {
+    header {
+        grid-template-columns: 20% 1fr 20%;
+        grid-template-rows: auto 1fr auto;
+        align-items: center;
+
+        .logo {
+            a {
+                img {
+                    width: 10%;
+                }
+            }
+        }
+
+        .navbar {
+            @include gridColRo(2, 3, 2, 2);
+            margin-top: -60px;
+            background-color: transparent;
+        }
+
+        .navbar-collapse {
+            background-color: transparent;
+            border: none;
+            place-self: start center;
+        }
+
+        .carrito {
+            @include gridColRo(3, 3, 2, 3);
+            display: flex;
+            justify-self: start;
+
+            svg {
+                width: 10%;
+                color: $color-blanco;
+            }
+        }
+
+        .h1PB {
+            @include gridColRo(1, -1, 3, 3);
+        }
+    }
+
+    main {
+        .carousel-item {
+            img {
+                width: 400px;
+                height: 400px;
+            }
+        }
+        .seccion-compra {
+            flex-direction: row;
+            gap: 200px;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        .card-img-top {
+            height: 400px;
+        }
+        .compraExclusivah2 {
+            font-size: 100px;
+        }
+        .compraExclusiva {
+            flex-direction: row;
+            justify-content: center;
+            div{
+                img{
+                    width: 400px;
+                    height: 400px;
+                }
+            }
+        }
+        .h2MochilaTotebag {
+            font-size: 40px;
+        }
+        .serviciosP {
+            font-size: 40px;
+        }
+        .servicios {
+            @include flex;
+            gap: 30px;
+            justify-self: center;
+            div {
+                display: grid;
+                grid-template-columns: auto 1fr;
+                align-items: center;
+                gap: 20px;
+                max-width: 500px;
+            }
+            div.invertido {
+                grid-template-columns: 1fr auto;
+                img {
+                    order: 2;
+                }
+            }
+        }
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;
+
+        .btnFooter {
+            width: 10%;
+        }
+    }
+}
